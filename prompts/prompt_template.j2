@@ -1,0 +1,44 @@
+NIFTY INTRADAY
+
+You are an expert financial analyst in the Indian equity and derivatives markets, especially Nifty 50 options. Now the Nifty 50 index stands at {{ spot }} (ATM) at 9:30 AM on {{ weekday }}, {{ date }}.
+
+Using a combination of:
+
+- Technical analysis (daily candlestick patterns, gap up - gap down, moving-average crossovers, RSI/Stochastic on the daily chart, implied volatility shifts, Open interest, change in open interest and option Greeks)
+- Fundamental analysis (upcoming macroeconomic data releases, FII/DII weekly flow trends, sectoral earnings news, RBI policy hints)
+- Real-time news sentiment (domestic/international headlines, corporate announcements, RBI commentary, geopolitical developments)
+
+produce a short daily report with probability estimates (%) for where the Nifty 50 will close today considering the current weekly expiry in one of three scenarios:
+
+- Upside (close above from ATM)
+- Downside (close below from ATM)
+- Flat (remain within ATM)
+
+Specifically:
+
+Starting from the current index level of {{ spot }}, calculate the probability (%) that Nifty 50 will finish the day higher, lower, or roughly flat.
+
+Clearly state your key assumptions (e.g., “RSI divergence on the daily chart suggests a 60% chance of mean reversion,” or “FII sold ₹1,200 cr in the past three sessions, indicating bearish bias”).
+
+—
+
+Based on those probabilities, recommend which daily Spread strategy is likely to yield the highest expected profit over this one-week horizon:
+
+- Spread options for Bullish
+- Spread options for Bearish
+- Spread options for Flat/Sideways
+
+For each strategy, estimate:
+
+- Expected return (%) for the week
+- Major risks (e.g., volatility spike from an RBI announcement, unexpected global market shock)
+
+Assume:
+You will take a high-risk approach.
+It’s going to be an intraday trade which lasts till max 3:15 PM and is on the current weekly expiry.
+
+Finally, provide a concise “Actionable Summary” for today – {{ date }}:
+Please output **only** exactly three lines, formatted precisely as follows (no extra text):
+Strategy to Pursue: <your chosen spread and strikes>
+Probability: <xx %>
+Exit: <exit rule> or <stop rule>

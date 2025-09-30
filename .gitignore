@@ -1,0 +1,13 @@
+.env
+__pycache__/
+# Virtual environment directories
+.venv/
+venv/
+
+# Python compiled modules
+*.pyc
+
+# Test and linter cache directories
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
